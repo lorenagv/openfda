@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<title>Buscador FDA</title>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>"FDA"</title>
+</head>
+<body style = "background-color: #AFA9C6">
+  <fieldset>
+      <legend><h1>Buscador FDA:</h1></legend>
+
+<form action = "searchDrug" method="get">
+    Ingrediente activo: <input type="text" name="active_ingredient" value=""><br>
+    Límite:<input type="number" name="limit" min="0" max="100" step="1" value="1"><br>
+  <input type="submit" value="Buscar fármaco">
+</form>
+
+<p><form action = "listDrugs" method="get">
+    Límite: <input type="number" name="limit" min="0" max="100" step="1" value="1"><br>
+    <input type="submit" value="Buscar lista de fármacos">
+</form>
+
+<p><form action = "listCompanies" method="get">
+  Límite: <input type="number" name="limit" min="0" max="100" step="1" value="1"><br>
+  <input type="submit" value="Buscar lista de empresas">
+</form>
+
+<p><form action = "listWarnings" method="get">
+  Límite: <input type="number" name="limit" min="0" max="100" step="1" value="1"><br>
+  <input type="submit" value="Buscar lista de advertencias">
+</form>
+
+<p><form action = "searchCompany" method="get">
+    Nombre de la empresa: <input type="text" name="company" value=""><br>
+    Límite:<input type="number" name="limit" min="0" max="100" step="1" value="1"><br>
+  <input type="submit" value="Buscar empresas">
+
+</form>
+
+</body>
+</html>
